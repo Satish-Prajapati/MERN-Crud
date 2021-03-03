@@ -1,0 +1,20 @@
+{
+  "name": "API",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "react": "cd client && npm start",
+    "dev": "concurrently \"node app.js\" \"npm run react\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.18"
+  }
+}

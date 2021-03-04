@@ -48,6 +48,10 @@ function App() {
       const newPerson = res.data
       setPersons([...persons, newPerson])
       alert('New person added')
+      e.target.elements.firstName.value = ''
+      e.target.elements.lastName.value = ''
+      e.target.elements.age.value = ''
+      e.target.elements.email.value = ''
     })
       .catch(err => alert('Unable to Add Person. Make sure you are using unique email'))
   }

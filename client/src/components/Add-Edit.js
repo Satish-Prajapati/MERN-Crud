@@ -15,7 +15,7 @@ export default function Edit({updateUser,addUser}) {
     let query = useQuery();
     useEffect(() => {
         id = query.get("id")
-        axios.get(`${apiUrl}/${id}`)
+        id && axios.get(`${apiUrl}/${id}`)
         .then(res => {
             const details = res.data
             setPersonDetail(details)

@@ -5,7 +5,7 @@ export default function List({users, deleteUser}) {
     return (
         <>
                 <div className="row pt-4">
-                    <Link to="/addedit">
+                    <Link to="/add-edit">
                         <button className="btn btn-success my-2">Add New Person</button>
                     </Link>                  
                     <div className="col-12">
